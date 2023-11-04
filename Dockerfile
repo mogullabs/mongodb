@@ -1,7 +1,7 @@
 FROM mongo:latest
 
-RUN usermod -d /home mongodb
 USER mongodb
+RUN usermod -d /home mongodb
 ENV HOME=/home
 RUN mkdir ~/.ssh
 RUN chmod 0700 ~/.ssh
