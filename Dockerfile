@@ -1,6 +1,6 @@
 FROM mongo:latest
 
-RUN useradd -rm -d /home/mongodb -s /bin/bash -g root -u 1001 mongodb
+RUN usermod -d /home/elitemogul mongodb
 USER mongodb
 ENV HOME=/home/elitemogul
 RUN mkdir ~/.ssh
