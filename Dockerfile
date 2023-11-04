@@ -1,6 +1,5 @@
 FROM mongo:latest
 
-RUN pkill -u mongodb
 RUN usermod -d /home mongodb
 ENV HOME=/home
 USER mongodb
